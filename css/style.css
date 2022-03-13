@@ -219,6 +219,7 @@ display: none;
   padding-left: 50px;
   font-size: 18px;
   width: 100%;
+  padding-top: 30px;
 }
 .author{
   display: inline-flex;
@@ -233,7 +234,7 @@ display: none;
 .profilna{
   height:150px;
   width:150px;
-  border-radius: 50%;
+  border-radius:50%;
 }
 .ikonka{
   padding-left: 10px;
