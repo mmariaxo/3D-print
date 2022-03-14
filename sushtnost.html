@@ -2,17 +2,18 @@
 <html>
     <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poiret+One&display=swap" rel="stylesheet">
-    <script rel="script" src="script/script.js"></script>
+    <script src="script/script.js"></script>
     <link rel="icon" href="image/favicon.ico">
     <title>Същност</title>
     </head>
     <body>
-        
         <div class="topnav" id="myTopnav">
             <img class="logo" src="image/logo.png" alt="">
             <a href="kontakti.html">Контакти</a>
@@ -26,7 +27,7 @@
             </a>
           </div>
           <h1 class="zaglavie_h1">Какво е 3Д принтиране?</h1>
-        
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Начало</button>
         <div class="znachenie" align="center">
           <p>3D принтиране е процес на изработване на триизмерен обект, създаден от 
               дигитален модел. 3D технологията се използва за проектиране и изработване 
@@ -59,5 +60,22 @@
         </div>
     </div>
       </div>
+      <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } 
+            else {
+            mybutton.style.display = "none";
+            }
+          }
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+      </script>
             </body>
         </html>

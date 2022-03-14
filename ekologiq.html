@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script rel="script" src="script/script.js"></script>
-    <script src="https://kit.fontawesome.com/4df98ac2e4.js" crossorigin="anonymous"></script>
     <link rel="icon" href="image/favicon.ico">
     <title>Екология</title>
 </head>
@@ -27,6 +26,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Начало</button>
     <h1 class="zaglavie_h1">Екология</h1>
     <div class="ekologiq_red1">
         <div class="informaciq_ekologiq">
@@ -62,6 +62,23 @@
             </p>
         </div>
     </div>
+     <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } 
+            else {
+            mybutton.style.display = "none";
+            }
+          }
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+      </script>
 </body>
 </html>
 <!--източник : https://livegreen.recyclebank.com/column/because-you-asked/what-s-the-environmental-impact-of-3d-printing-->

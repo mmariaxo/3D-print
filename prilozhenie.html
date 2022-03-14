@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poiret+One&display=swap" rel="stylesheet">
     <script rel="script" src="script/script.js"></script>
+    <script rel="script" src="script/button.js"></script>
     <link rel="icon" href="image/favicon.ico">
     <title>Приложение</title>
     </head>
@@ -24,6 +25,7 @@
               <i class="fa fa-bars"></i>
             </a>
           </div>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Начало</button>
           <h1 class="zaglavie_h1">Приложение</h1>
           <ul class="prilozhenie_menu_full">
             <li>Приложение в медицината</li>
@@ -41,9 +43,22 @@
           </div><br>
           <div class="proizvodstvo">
             <div class="proizvodstvo_text">
-              <p>Текст за масовото производство</p>
+              <h3>Приложение в масовото производство</h3>
+              <p>3D принтерите се използват все по-масово за производство на отделни детайли или на
+               цели крайни продукти в малки серии. Това позволява да се тестват предпочитанията на 
+               потребителите и едва ако харесат определен нов продукт, той да се произвежда масово. 
+               Технологията е много подходяща също за специфични форми на производство, за които 
+               изграждането на производствени мощности от традиционен тип би било много скъпо,
+                както и за бързо задоволяване на локалната нужда от даден продукт в определен регион. <br>
+                3D принтирането често влиза в комбинация с други методи за серийно производство, с цел 
+                да се оптимизира процесът, намалят сроковете и повиши качеството. Изработката на
+                 3D принтирани калъпи/пресформи за шприцване (injection molding), 
+                 раздуване (blow molding) или изтегляне (thermoforming) се превърща 
+                 във все по-честа практика. Едно от основните преимущества на по този 
+                 начин изградената матрица са специални охладителни канали, което позволява 
+                 отливането на сложни форми с по-високо качество.</p>
             </div>
-             <img class="proizvodstvo_snimka" src="link za snimka">
+             <img class="proizvodstvo_snimka" src="image/proizvodstvo.jpg">
           </div><br>
           <div class="stroitelstvo">
             <div class="stroitelstvo_text">
@@ -59,5 +74,22 @@
               <img src="link za snimka">
             </div>
           </div>
+          <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+    
+              function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                } 
+                else {
+                mybutton.style.display = "none";
+                }
+              }
+              function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+              }
+          </script>
     </body>
 </html>

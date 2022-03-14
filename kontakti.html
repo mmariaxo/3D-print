@@ -28,6 +28,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Начало</button>
         <h1 class="zaglavie_h1">Свържете се с нас!</h1>
         <div class="author">
             <img class="profilna" src="image/maria.jpg">
@@ -76,6 +77,23 @@
       </form>
     </div>
 </div>
+<script>
+  var mybutton = document.getElementById("myBtn");
+  window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+      } 
+      else {
+      mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
 </html>
     

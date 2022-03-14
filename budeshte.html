@@ -2,6 +2,8 @@
 <html>
     <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,38 +12,65 @@
     <script rel="script" src="script/script.js"></script>
     <link rel="icon" href="image/favicon.ico">
     <title>Бъдеще</title>
-    </head>
-    <body>
-        
-        <div class="topnav" id="myTopnav">
-            <img class="logo" src="image/logo.png" alt="">
-            <a href="kontakti.html">Контакти</a>
-            <a href="ekologiq.html">Екология</a>
-            <a href="budeshte.html">Бъдеще</a>
-            <a href="prilozhenie.html">Приложение</a>
-            <a href="sushtnost.html">Същност</a>
-            <a href="index.html">Начало</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-    <h1 class="zaglavie_h1">Бъдеще</h1>
-    <p class="budeshte">Следващи стъпки при 3Д принтирането в бъдещ план:</p>
-    <p class="budeshte">Поглеждайки с бъдеща перспектива, настоящите приложения, класифициращи се като 
-        експериментални, вероятно ще се превърнат в едни от масовото търсени единици. 
-        Тук по-скоро става въпрос за продукти от рода на персонализираната храна, 
-        имплантите и много други, които имат широко търсене от страна на потребителите.
-        По отношение на развитието пък няма нужда от опасения, защото едва ли ще настъпи 
-        момент, когато това ще е в застой. Принтерите предлагат изключително много 
-        предимства и след като се застъпят смело в производствения сектор могат да 
-        започнат промените по отношение на техните логистики.
-        Също така, като следваща стъпка може да фигурираме и опитите за откриване 
-        на по-екологични материали, щадящи пряко околната среда. Със своето непрекъснато 
-        усъвършенстване е напълно възможно да имплементираме употребата на нови материали 
-        в машината, като стъкло, мазилка, керамика и други.
-        Значението им е съществено, защото някои отнемат по-малко топлинна енергия при 
-        обработка, което довежда до значително понижение от страна на енергийната 
-        консумацията на принтерите. Така  системата ще бъде по-икономична и съответно 
-        потребителите ще бъдат по-ентусиазирани относно опазването на природата.</p>
+  </head>
+  <body>
+      
+      <div class="topnav" id="myTopnav">
+          <img class="logo" src="image/logo.png" alt="">
+          <a href="kontakti.html">Контакти</a>
+          <a href="ekologiq.html">Екология</a>
+          <a href="budeshte.html">Бъдеще</a>
+          <a href="prilozhenie.html">Приложение</a>
+          <a href="sushtnost.html">Същност</a>
+          <a href="index.html">Начало</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+  <h1 class="zaglavie_h1">Бъдеще</h1>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Начало</button>
+      <div class="budeshte1"> 
+        <img class="budeshte_img" src="image/meso.jpg">
+        <div class="budeshte_info"> 
+         <p><strong>Следващи стъпки при 3Д принтирането в бъдещ план:</strong></p>
+         <p>Поглеждайки с бъдеща перспектива, настоящите приложения, класифициращи се като 
+      експериментални, вероятно ще се превърнат в едни от масовото търсени единици. 
+      Тук по-скоро става въпрос за продукти от рода на персонализираната храна, 
+      имплантите и много други, които имат широко търсене от страна на потребителите.
+      По отношение на развитието пък няма нужда от опасения, защото едва ли ще настъпи 
+      момент, когато това ще е в застой. Принтерите предлагат изключително много 
+      предимства и след като се застъпят смело в производствения сектор могат да 
+      започнат промените по отношение на техните логистики.</p>   
+        </div>
+      </div>
+
+      <div class="budeshte2"> 
+        <img class="budeshte_img" src="image/Food2.jpg">
+        <div class="budeshte_info"> 
+         <p>Също така, като следваща стъпка може да фигурираме и опитите за откриване 
+          на по-екологични материали, щадящи пряко околната среда. Със своето непрекъснато 
+          усъвършенстване е напълно възможно да имплементираме употребата на нови материали 
+          в машината, като стъкло, мазилка, керамика и други.
+          Значението им е съществено, защото някои отнемат по-малко топлинна енергия при 
+          обработка, което довежда до значително понижение от страна на енергийната 
+          консумацията на принтерите. Така  системата ще бъде по-икономична и съответно 
+          потребителите ще бъдат по-ентусиазирани относно опазването на природата.</p>   
+        </div>
+      </div>
+      <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     </body>
 </html>
