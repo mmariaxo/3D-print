@@ -79,7 +79,7 @@ display: none;
 @media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }
@@ -286,6 +286,14 @@ padding-left: 30px;
   margin-bottom: 20px;
 }
 
+.house iframe {
+position: relative;
+top: 0;
+left: 0;
+width: 640px;
+height: 100%;
+}
+
 
 .table_s div {
   min-height: 200px;
@@ -294,7 +302,7 @@ padding-left: 30px;
 .izpolzvane{
   color: white;
   font-size: 12pt;
-  width: 100%;
+  width: min(90%, 1200px);
   padding-left: 10px;
   padding-top: 10px;
   text-align: justify;
@@ -451,6 +459,7 @@ textarea:valid~label{
 .budeshte1{
   padding-top:50px;
   display: inline-flex;
+  padding-right: 20px;
 }
 .budeshte_img{
   width:450px;
