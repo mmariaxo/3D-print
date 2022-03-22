@@ -10,7 +10,7 @@
 }
 body{
   background-color: #9400D3;
-  background-image: url(../image/images.jfif);
+  background-image: url(../image/gradient.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -41,22 +41,30 @@ body{
 .topnav {
   margin: 0;
   padding-top: 20px;
-  padding-right: 100px;
   overflow: hidden;
   
 }
 .topnav a {
 display: block;
-  color: white;
-  text-align: center;
- padding-left: 10px;
- padding-top: 20px;
-  padding-right: 60px;
-  font-family: 'Comfortaa', cursive;
-  font-size: 18px;
-  float: right;
- 
+color: white;
+text-align: center;
+padding-left: 10px;
+padding-top: 20px;
+padding-right: 60px;
+font-family: 'Comfortaa', cursive;
+font-size: 18px;
+float: right;
+text-decoration: none;
 }
+a:link{
+  color: #ffff;
+  }
+  a:visited{
+    color: #ffff;
+  }
+  a:hover{
+    color:#f83de9
+  }
 .topnav .icon {
 display: none;
 }
@@ -131,6 +139,35 @@ display: none;
     margin-left: auto;
     margin-right: auto;
  }
+ .medicina{
+  flex-wrap: wrap;
+}
+.medicina_snimka{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+}
+.stroitelstvo{
+  flex-wrap: wrap;
+}
+.stroitelstvo_snimka{
+  height: 250px;
+   width: 300px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.hranitelna_industria{
+  flex-wrap: wrap;
+}
+.hranitelna_industria_snimka{
+  height: 250px;
+   width: 300px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
  .budeshte1{
   display:block;
   flex-wrap: wrap;
@@ -151,6 +188,10 @@ padding-left: 30px;
 }
 .budeshte_info{
   padding-right: 20px;
+}
+.profilna{
+  margin-left: 0;
+  margin-right: 0;
 }
 } 
 /*бутон за връщане в началото*/
@@ -284,7 +325,7 @@ padding-left: 30px;
   padding-bottom: 20px;
 }
 .info{
-  align-content: center;
+  align-items: center;
   display: inline-block;
   justify-items: center;
   padding-left: 50px;
@@ -295,10 +336,8 @@ padding-left: 30px;
 }
 .author{
   display: inline-flex;
-  align-content: center;
-  justify-content: center;
-  padding-left: 100px;
-
+  align-items:center;
+  justify-items: center;
   font-family: 'Comfortaa', cursive;
   font-weight: 300;
   color: #ffff;
@@ -307,6 +346,7 @@ padding-left: 30px;
   height:150px;
   width:150px;
   border-radius:50%;
+  margin-left: 100px;
 }
 .ikonka{
   padding-left: 5px;
@@ -452,14 +492,15 @@ textarea:valid~label{
   padding-left: auto;
   flex-direction: row;
   padding-top: 50px;
-  color:#ffff
+  color:#ffff;
 }
 .proizvodstvo{
   display: inline-flex;
   padding-left:auto;
-  flex-direction: row-reverse;
+  flex-direction: row;
   padding-top: 50px;
   color: #ffff;
+  padding-left: 10px;
 }
 .stroitelstvo{
   display: inline-flex;
@@ -470,10 +511,11 @@ textarea:valid~label{
 }
 .hranitelna_industria{
   display: inline-flex;
-  padding-left: 100px;
-  flex-direction: row-reverse;
+  padding-left: auto;
+  flex-direction: row;
   padding-top: 50px;
-  color:#ffff
+  color:#ffff;
+  padding-bottom: 40px;
 }
 h3{
   padding-bottom: 20px;
@@ -482,10 +524,39 @@ h3{
   height: 250px;
   width: 300px;
   display: inline-flex;
-
 }
 .proizvodstvo_text{
   padding-right: 30px;
   padding-left: 50px;
   line-height: 1cm;
+}
+.medicina_text{
+  padding-right: 30px;
+  padding-left: 50px;
+  line-height: 1cm;
+}
+.medicina_snimka{
+  height: 250px;
+  width: 300px;
+  display: inline-flex;
+}
+.stroitelstvo_text{
+  padding-right: 30px;
+  padding-left: 50px;
+  line-height: 1cm;
+}
+.stroitelstvo_snimka{
+  height: 250px;
+  width: 300px;
+  display: inline-flex;
+}
+.hranitelna_industria_text{
+  padding-right: 30px;
+  padding-left:50px;
+  line-height: 1cm;
+}
+.hranitelna_industria_snimka{
+  height: 250px;
+  width: 300px;
+  display: inline-flex; 
 }
