@@ -140,6 +140,7 @@ display: none;
  }
  .proizvodstvo{
    flex-wrap: wrap;
+   padding-left: auto;
  }
  .proizvodstvo_snimka{
    height: 250px;
@@ -150,6 +151,7 @@ display: none;
  }
  .medicina{
   flex-wrap: wrap;
+  padding-left: auto;
 }
 .medicina_snimka{
    display: block;
@@ -159,6 +161,7 @@ display: none;
 }
 .stroitelstvo{
   flex-wrap: wrap;
+  padding-left: auto;
 }
 .stroitelstvo_snimka{
   height: 250px;
@@ -169,6 +172,7 @@ display: none;
 }
 .hranitelna_industria{
   flex-wrap: wrap;
+  padding-left: auto;
 }
 .hranitelna_industria_snimka{
   height: 250px;
@@ -494,7 +498,8 @@ textarea:valid~label{
 .budeshte1{
   padding-top:50px;
   display: inline-flex;
-  padding-right: 20px;
+
+  padding-left:auto;
 }
 .budeshte_img{
   width:450px;
@@ -510,6 +515,7 @@ textarea:valid~label{
   font-family: 'Comfortaa', cursive;
   font-weight: 300;
   text-align: justify;
+  
 }
 .budeshte_img2{
   align-items: center;
@@ -522,7 +528,8 @@ textarea:valid~label{
   display: inline-flex;
   padding-top: 20px;
   padding-bottom: 30px;
-  padding-right: 20px;
+  padding-left: auto;
+
 }
 /*приложение*/
 .prilozhenie_menu_full{
@@ -537,6 +544,7 @@ textarea:valid~label{
   flex-direction: row;
   padding-top: 50px;
   color:#ffff;
+
 }
 .proizvodstvo{
   display: inline-flex;
