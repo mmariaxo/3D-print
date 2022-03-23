@@ -42,14 +42,13 @@ body{
   margin: 0;
   padding-top: 20px;
   overflow: hidden;
-  
 }
 .topnav a {
 display: block;
 color: white;
 text-align: center;
-padding-left: 10px;
-padding-top: 20px;
+padding-left: 40px;
+padding-top: 30px;
 padding-right: 60px;
 font-family: 'Comfortaa', cursive;
 font-size: 18px;
