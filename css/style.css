@@ -114,16 +114,22 @@ display: none;
     flex-wrap: wrap;
   }
   .ekologiq1{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width:100%
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .ekologiq_red2{
     display: block;
     flex-wrap: wrap;
   }
   .ekologiq2{
-  padding-left: 30px;
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .informaciq_ekologiq{
     padding-right: 20px;
@@ -446,18 +452,19 @@ textarea:valid~label{
 .ekologiq_red1{
   padding-top:50px;
   display: inline-flex;
+  padding-right: 20px;
 }
 .ekologiq1{
-  width:450px;
+  align-items: center;
+  width: 400px;
   height:250px;
-  padding-left:60px;
-  padding-right: 60px;
-
+  padding-left: 30px;
 }
 .informaciq_ekologiq{
   line-height: 0.7cm;
   color:#ffff;
-  padding-left:20px;
+  padding-left: 10px;
+  padding-right: 20px;
   font-family: 'Comfortaa', cursive;
   font-weight: 300;
   text-align: justify;
@@ -466,12 +473,11 @@ textarea:valid~label{
   align-items: center;
   width: 400px;
   height:250px;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 .ekologiq_red2{
+  padding-top:50px;
   display: inline-flex;
-  padding-top: 20px;
-  padding-bottom: 30px;
   padding-right: 20px;
 }
 /*бъдеще*/
