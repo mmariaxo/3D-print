@@ -297,10 +297,10 @@ footer{
 }
 
 
-.printer_img object{
+.printer_img {
   float: left;
-  max-width: 100%;
-  height: auto;
+  width: 500px;
+  height: 350px;
  
 }
 
